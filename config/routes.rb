@@ -1,4 +1,6 @@
 TandemDemo::Application.routes.draw do
+  mount Tandem::Engine => "/"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

@@ -22,6 +22,8 @@ end
 
 gem 'jquery-rails'
 
+gem 'tandem', :git => 'git@github.com:12spokes/tandem.git'
+
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
