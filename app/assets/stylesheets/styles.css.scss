@@ -52,8 +52,9 @@ body#monsters {
         ul {display: none;}
       }
     }  
-  }  
-  #city-divider {
+    
+  }  // end body#monsters
+  #divider {
     background: transparent image-url('city.png') 0 0 repeat-x;
     width: 100%;
     height: 400px;    
@@ -148,6 +149,151 @@ body#monsters {
     }
   }
 }
+body#circus {
+  background: transparent image-url('bgd-circus.png');
+  #header {
+    padding: 20px 0;    
+  }
+  #nav {
+    position: relative;
+    left: 13%;  
+    
+    ul {
+      margin-top: 20px;
+      li {
+        @include helvetica;
+        font-weight: 300px;
+        color: $darkblue;
+        float: left;
+        padding: 10px 0;
+        background: transparentize(#fff, 0.5);
+        a {
+          display:inline;
+          padding: 10px 30px;
+          font-size: 15px;
+          color: $midblue;
+          &:hover {
+            background: #fff;
+            text-decoration: none;
+          }
 
+        }
+        &#logo {
+          background: none;
+          padding: 10px 30px;
+          img {
+          float: left;
+          margin: -10px 0 0 0;
+        }}
+        ul {display: none;}
+
+      }
+
+    }
+  }
+  #masthead {
+    position: relative;
+    padding: 0;
+    margin: 15px 0;
+    img {
+      -webkit-box-shadow: 0 0 10px #aaa;
+      -moz-box-shadow: 0 0 10px #aaa;
+      box-shadow: 0 0 10px #aaa;
+    }
+    #tag {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      z-index: 500;
+      width: 400px;
+      padding: 20px 0;
+      h1 #circus_tagline {
+        @include helvetica;
+        font-size: 40px;
+        margin-top: 30px;
+        color: #fff;
+        font-weight: 100;
+      }
+      h2 #circus_subtag {
+        @include helvetica;
+        color: #fff;
+        font-size: 25px;
+        padding: 5px 0;
+        font-weight: 100; 
+      }
+    }
+  }
+  .crossmedia {
+    h1 {
+      font-size: 20px;
+      @include helvetica;
+      padding: 5px 0;
+    }
+    p {
+      @include helvetica;
+      font-size: 13px;
+      line-height: 18px;
+    }
+    .box {
+      background: transparentize($darkblue, 0.9);      
+      -webkit-box-shadow: 0 0 10px #aaa;
+      -moz-box-shadow: 0 0 10px #aaa;
+      box-shadow: 0 0 10px #aaa;
+      border: 1px solid transparentize($darkblue, 0.1);
+      -moz-border-radius: 5px;
+      -webkit-border-radius: 5px;
+      border-radius: 5px;
+    }
+    .span4 {      
+      padding: 10px;
+    }
+    #media2_title {
+      h1 {
+      font-size: 30px;
+      padding: 10px 0;
+      color: $darkblue;
+      }
+    }
+    #media2 {
+      p {
+        font-size: 15px;
+        line-height: 25px;
+        color: $midblue;
+        @include helvetica;
+      }
+    }
+  }
+  #footer {
+    margin: 20px 0;
+    .container {
+      border-top: 1px solid #ccc;
+      padding-top: 10px;
+    }
+    ul {
+      padding:0;
+      margin: 0;
+      float: left;
+      li {
+        display: inline;
+        a {
+          display: inline;
+          color: #aaa;
+          @include helvetica;
+          padding-right: 10px;
+          font-size: 12px;
+        }
+        ul {display:none;}
+      }
+    }
+    .legal {
+      position: absolute;
+      right: 0;
+      color: #aaa;
+      @include helvetica;
+      padding-right: 10px;
+      font-size: 12px;
+    }
+  }
+}
 
 
