@@ -1,0 +1,153 @@
+@import "_variables";
+@import "_reset";
+
+body {
+  font-family: Georgia;
+  div.top-bar {
+    background: #81a8b8 image-url("bgd-top-bar.png") bottom left repeat-x;
+    padding: 10px 0;
+    @include goo;
+    color: #fff;    
+    font-size: 18px;
+    span {
+      position: absolute;
+      right: 0;
+      a {color: $midblue;}
+    }
+  }  
+
+}
+body#monsters {
+    background: transparent image-url('bgd-bottom.png'); 
+    #nav {
+      background: transparentize(#fff, 0.5);
+      -moz-border-radius: 5px;
+      -webkit-border-radius: 5px;
+      border-radius: 5px;
+      border: 1px solid #fff;
+      float:right;
+      margin-top: 30px;
+      padding: 20px 10px;
+    ul.nav {
+      padding:0;
+      margin: 0;          
+      li {
+        display: inline;
+        padding: 0;
+        a {
+          display: inline;
+          font-size: 18px;
+          @include goo;
+          color: $red;
+          padding: 10px 20px;
+          &:hover {
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            border-radius: 5px;
+            background: #eee;
+            color: #333;
+          }
+        }
+
+        ul {display: none;}
+      }
+    }  
+  }  
+  #city-divider {
+    background: transparent image-url('city.png') 0 0 repeat-x;
+    width: 100%;
+    height: 400px;    
+    position: absolute;
+    top: 410px;
+  }
+  #masthead {
+    background: transparent image-url('bgd-masthead.png'); 
+  }  
+  #monster_img {
+    float: left;
+    width: auto;
+  }
+  #tag {
+    float: right;
+    width: 400px;
+    padding: 20px 0 120px 20px;
+    h1 #tagline {
+      @include goo;
+      font-size: 40px;
+      margin-top: 30px;
+    }
+    h2 #subtag {
+      @include goo;
+      color: $red;
+      font-size: 18px;
+      padding: 15px 0 80px 0;
+      background: transparent image-url('planes.png') 70% bottom no-repeat;
+    }
+  }
+  .crosslinks {
+    div.span4 {
+      @include goo;
+      color: #fff;
+      line-height: 18px;
+      padding: 5px 0;
+      background: transparentize($red, 0.5);
+      border: 1px solid transparentize($red, 0.5);
+      -moz-border-radius: 5px;
+      -webkit-border-radius: 5px;
+      border-radius: 5px;
+      padding: 10px;      
+      width: 275px;
+      p {
+        padding: 5px 0;
+        line-height: 20px;
+        font-size: 15px;
+        font-weight: 300;
+        @include helvetica;
+      }
+      .title p {
+        display: block;
+        padding: 5px 0;
+        font-size: 18px;
+        @include goo;
+      }
+    }
+  }
+  #footer {
+    padding: 20px 0;
+    @include goo;
+    font-size: 12px;
+    color: #fff;    
+    .container {
+      background: transparent image-url('bgd-footer.png') center top no-repeat;
+      padding: 80px 0 70px 0;
+      width: 600px;
+    }
+    span.legal {
+      position: absolute;
+      right:0;
+      font-size:12px;
+    }
+    ul.nav {
+      padding: 0; margin: 0;
+      float: left;
+      li {
+      display: inline;
+      a {
+        color: #fff;
+        display: inline;
+        font-size: 11px;
+        padding-right: 10px;
+        @include goo;
+        &:hover {
+          color: #000;
+          background: none;
+        }
+      }
+      ul {display: none;}
+      }
+    }
+  }
+}
+
+
+
