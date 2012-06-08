@@ -295,5 +295,28 @@ body#circus {
     }
   }
 }
+// Styles for Tandem /Pages
 
+#tandem-defaults {
+  background: transparentize(#fff, 0.3);
+  margin: 10px 0;
+  h1 {
+    font-size: 22px;
+    padding: 15px 0;
+  }
+  table {
+    width: 100%;
+    tbody {
+      th {
+        padding: 10px 0;
+        font-size: 13px;
+        color: #666;
+      }
+      td {
+        padding: 5px;
+        border: 1px solid #ccc;
+      }
+    }
+  }
+}
 
