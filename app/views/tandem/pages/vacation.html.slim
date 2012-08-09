@@ -1,0 +1,30 @@
+.container
+	#header.clearfix
+		#nav
+			ul
+				li 
+					a href="/pages/vacation" Vacation
+				li 
+					a href="/pages/vacation" Link
+				li#logo
+					= tandem_image_tag(:logo)										
+				li 
+					a href="/pages/vacation" Link
+				li 
+					a href="/" Monsters		
+	#masthead
+		#tag
+			h1 = tandem_text_tag(:circus_tagline)
+			h2 = tandem_text_tag(:circus_subtag)
+		= tandem_image_tag(:splash)
+
+	.crossmedia
+		.row
+			.span4.box
+				.title 
+					= tandem_text_tag(:media1_title, editor: :wysiwyg)
+				= tandem_text_tag(:media1, editor: :wysiwyg)
+			.span7
+				.title 
+					= tandem_text_tag(:media2_title, editor: :wysiwyg)
+				= tandem_text_tag(:media2, editor: :wysiwyg)

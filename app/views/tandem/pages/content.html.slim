@@ -1,0 +1,28 @@
+#divider
+#masthead
+	.container
+		#nav
+			= tandem_navigation_tag(@page)
+		.clearfix
+			.monster
+		  	= tandem_image_tag(:monster_img)
+			#tag
+				h1 = tandem_text_tag(:tagline)
+				h2 = tandem_text_tag(:subtag)
+
+.container.crosslinks
+	.row
+		.span4
+			.title 
+				= tandem_text_tag(:media1_title, editor: :wysiwyg)
+			= tandem_text_tag(:media1, editor: :wysiwyg)
+		.span4
+			.title 
+				= tandem_text_tag(:media2_title, editor: :wysiwyg)
+			= tandem_text_tag(:media2, editor: :wysiwyg)
+		.span4.last
+			.title 
+				= tandem_text_tag(:media3_title, editor: :wysiwyg)
+			= tandem_text_tag(:media3, editor: :wysiwyg)			
+
+

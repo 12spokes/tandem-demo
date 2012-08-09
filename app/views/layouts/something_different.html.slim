@@ -1,0 +1,12 @@
+= render "/shared/head"
+body#circus  
+  =tandem_page_links           
+  .top-bar
+    .container
+      p
+        | You're Using the Tandem Demo
+        span 
+          a href="/" Visit TandemCMS.com
+  ==yield  
+
+= render "/shared/footer"
